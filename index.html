@@ -1,0 +1,280 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@:` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.------.\ ' J
+                         "-.   "--"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..--  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+
+<!--
+
+    So you'd like to know how to use impress.js?
+
+    You've made the first, very important step -- you're reading the source code.
+    And that's how impress.js presentations are built -- with HTML and CSS code.
+
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    And what is even more important, you need to be a designer, too, because there are no default
+    styles for impress.js presentations, there is no default or automatic layout for them.
+
+    You need to design and build it by hand.
+
+    So...
+
+    Would you still like to know how to use impress.js?
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Google Glass | by Edmond Lau @edmondlauca</title>
+
+    <meta name="description" content="This is a presentation about Google Glass" />
+    <meta name="author" content="Edmond Lau" />
+
+    <link href='//fonts.googleapis.com/css?family=Abel|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+    <!--
+
+        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
+        presentation to work.
+
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+
+    -->
+    <link href="css/google-glass-impressjs.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+  <!-- my own stuff to starts here -->
+
+  <div id="cover" class="step" data-x="0" data-y="0" data-scale="4">
+    <!-- http://w3bits.com/google-glass-font/ -->
+    <span class="top-title">Google GLASS</span><br />
+    <span class="name">by Edmond Lau</span>
+    <span class="footnote">March 2015</span>
+  </div>
+
+  <div id="history" class="step" data-x="1500" data-y="-1000">
+    <p class="title">A Brief History</p>
+    <p class="desc">&bull; It was developed by Google X, the first prototype (mid-2011) <b>weighted 8 pounds</b>. Then it was publicly announced in April 2012.</p>
+    <p class="desc">&bull; Google started selling a prototype of Google Glass to qualified <b>Glass Explorers</b> in the US in April 2013, and they made it available to the public in May 2014.</p>
+    <p class="desc">&bull; In January 2015, Google announced that it would stop producing the Google Glass prototype but remained committed to the development of the product. It graduated from Google [X] Labs, from Google's point of view.</p>
+
+  </div>
+
+  <div id="how-was-it-introduced" class="step" data-x="1500" data-y="0">
+    <p class="title">How was it being introduced?</p>
+    <p class="desc">Nothing is better than having skydivers jumping off a plane at your developer conference wearing the new product.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D7TB8b2t3QE" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div id="consumer-1" class="step" data-x="-2000" data-y="1000">
+    <p class="title">Consumer Use Cases</p>
+    <p class="desc">&bull; Share the moment, including videos and photos.</p>
+    <p class="desc">&bull; Overlay information in front of your eye.<img class="bike" src="images/google-glass-bike.jpg" /></p>
+<!--  Image source: http://www.dailymail.co.uk/sciencetech/article-2837750/Is-Google-Glass-flop-Developers-customers-ditching-smart-spectacles-favour-Oculus-Rift.html#v-3637689178001 -->
+  </div>
+
+  <div id="consumer-2" class="step" data-x="-1000" data-y="1000">
+  <p class="title">Consumer Use Cases</p>
+    <p class="desc">&bull; Replacement for instruction manuals (e.g. Ikea)</p>
+    <p class="desc">&bull; Real-time language translation.</p>
+    <p class="desc">&bull; Overcoming disabilities</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/P8GVKqGruOQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div id="at-work-1" class="step" data-x="0" data-y="1000">
+  <p class="title">Google Glass at Work</p>
+    <p class="desc">&bull; Record video during surgeries for record or for education purposes; </p>
+    <p class="desc">&bull; Family doctor hands free when treating patient.</p>
+    <p class="desc">&bull; Hotel, airline and other servicing industries.</p>
+    <img class="medical" src="images/google-glass-medical.jpg" />
+    <!-- Image source: https://www.youtube.com/watch?v=ssldTFWBv3E -->
+    <img class="airline" src="images/glass-airline.jpg"/>
+    <!-- Image source: http://skift.com/2014/06/23/why-virgin-atlantic-chose-google-glass-over-tablets-and-smart-watches/ -->
+  </div>
+
+  <div id="at-work-2" class="step" data-x="1000" data-y="1000">
+  <p class="title">Google Glass at Work</p>
+    <p class="desc">&bull; Nepal Government adopted Google Glass for tackling poachers of wild animals and herbs of their international parks.</p>
+    <p class="desc">&bull; Warehouse picking, receiving, access to inventory and order information</p>
+    <p class="desc">&bull; <a href="http://mashable.com/2012/09/09/google-glass-dvf-fashion-week/">Fashion models On the runway</a></p>
+    <p class="desc"><a href="https://developers.google.com/glass/distribute/glass-at-work">Other Glass at Work Programs</a></p>
+  </div>
+
+  <div id="apps" class="step" data-x="2000" data-y="1000" data-rotate="-90">
+    <p class="title">Apps</p>
+    <p class="desc">Popular apps include: Google Now, Twitter, CNN, duoLingo, Facebook, Word Lens, Evernote, IFTTT and NYT.</p>
+    <img src="images/google-glass-apps.jpeg" />
+    <p class="desc"><a href="https://play.google.com/store/apps/details?id=com.google.glass.companion&hl=en">My Glass for Android</a></p>
+  </div>
+
+  <div id="live-demo" class="step" data-x="2500" data-y="300" data-z="-500" data-rotate-x="-60" data-rotate-y="25" data-scale="1">
+      <span class="live">Live</span> <span class="demo">Demo</span>
+  </div>
+
+  <div id="tech-spec-1" class="step" data-x="3000" data-y="-2000" data-z="0" data-scale="2">
+    <p class="title">Basic Structure</p>
+    <img src="images/k-bigpic.jpg" alt="basic structure" />
+    <p class="desc"><a href="http://www.brillen-sehhilfen.de/en/googleglass/">Google Glass Infographic</a></p>
+  </div>
+
+  <div id="tech-spec-2" class="step" data-x="2000" data-y="-1500" data-z="-4000" data-rotate="-270">
+    <p class="title">Detail Technical Spec</p>
+    <p class="desc">&bull; Android 4.4.2, 640x360 LCoS display, Touchpad, 5MP Camera, 720p Video Recording, WiFi 802.11b/g, Bluetooth, 16GB, 2GB RAM, TI OMAP 4430 ARMv7 1.2GHz Dual, 3 axis Gyroscope, 3 axis Accelerometer, 3 axis Magnetometer (compass), Ambient Sensor, Bone Conduction Audio</p>
+    <p class="desc">&bull; Google's Glass Development Kit (GDK) and Mirror API are made available to developers.</p>
+    <p class="desc"><a href="https://support.google.com/glass/answer/3064128?hl=en">Google Glass Tech Spec</a></p>
+  </div>
+
+  <div id="tech-spec-3" class="step" data-x="4500" data-y="-1000" data-z="-15000" data-rotate="-540" data-scale="0.1">
+    <p class="title">Teardown</p>
+    <img src="images/glass-teardown-exploded-top-withsensors-smaller.png" alt="teardown diagram" />
+    <p class="desc"><a href="http://hackinglass.com/glass-sensors-relative-to-hardware-a-diagram/">Glass Diagram</a></p>
+  </div>
+
+  <div id="user-interface" class="step" data-x="5500" data-y="3000" data-z="-8000" data-rotate="-270" data-scale="0.3">
+    <p class="title">User Interface Concepts</p>
+    <p class="desc">Concepts include Timeline View, Static Cards, Live Cards, Immersion, Menu Items etc.</p>
+    <img class="timeline" src="images/timeline-strip.png" /> <img class="ui" src="images/user-interface-immersions.png" /> <img class="ui" src="images/dog-gmail-menu.png" />
+    <!-- image source: http://harkable.com/blog/google-glass-design-ui-cheat-sheet/ -->
+    <p class="desc"><a href="https://developers.google.com/glass/design/ui">More on Google Glass UI</a></p>
+  </div>
+
+  <div id="personal-review" class="step" data-x="3500" data-y="-2000" data-z="-3000" data-rotate="270" data-scale="2">
+    <p class="title">Personal Review</p>
+    <p class="desc">
+      <b class="rotating">The Good</b><br />
+      &bull; Cutting edge design and integrate with technologies for its display, sensors, size and weight<br />
+      &bull; Hands free features!<br />
+      &bull; Lighter than other VR headsets in the market today
+    </p>
+    <p class="desc">
+      <b class="rotating">The Bad</b><br />
+      &bull; Battery life is poor<br />
+      &bull; Wink to take photo is creepy<br />
+      &bull; The price, both the Glass and frame
+    </p>
+  </div>
+
+  <div id="other-products" class="step" data-x="3000" data-y="-1000" data-rotate-x="-90" data-rotate-y="-90" data-scale="2">
+    <p class="title">Other Products</p>
+    <p class="desc">
+      <a href="http://eyetap.org/">EyeTap</a>, <a href="http://www.theverge.com/2015/1/21/7868251/microsoft-hololens-hologram-hands-on-experience">Microsoft HoloLens</a>, <a href="https://www.oculus.com/">Oculus Rift</a>, <a href="http://sixense.com/">Sixth Sense</a>, <a href="http://www.samsung.com/global/microsite/gearvr/gearvr_features.html">Samsung Gear VR (Oculus)</a>, <a href="http://www.wareable.com/headgear/the-best-ar-and-vr-headsets">and more</a>.</p>
+
+    <!-- image source: http://www.theverge.com/2015/1/21/7868251/microsoft-hololens-hologram-hands-on-experience-->
+    <img class="hololens" src="images/hololens.png" />
+    <img class="oculus" src="images/oculus.jpg" />
+    <p class="desc">Some of these are designed for full feature at home experience, both entertainment and gaming.</p>
+  </div>
+
+  <div id="dont-do-this" class="step" data-x="3600" data-y="1000" >
+    <p class="title">Don't do this!</p>
+    <img class="glasshole" src="images/glass-bathroom.jpg" />
+    <img class="glass-ban" src="images/google-glass-ban.png" />
+    <!-- image source: http://blog.laptopmag.com/google-glasshole -->
+    <!-- image source: http://www.cio.com/article/2879048/google-glass/google-glass-is-alive-and-well-in-the-enterprise.html -->
+  </div>
+
+  <div id="resources" class="step" data-x="4000" data-y="1500" data-z="-1000" data-rotate-y="90">
+    <p class="title">Resources</p>
+    <p class="desc">
+      <a href="https://developers.google.com/glass/">Google Glass for Developers</a>,
+      <a href="https://developers.google.com/glass/design/index">Design for Glass</a>,
+      <a href="https://plus.google.com/+GoogleGlass/">Google Glass G+</a>,
+      <a href="http://www.catwig.com/google-glass-teardown/">Google Glass Teardown</a>,
+      <a href="http://mashable.com/2015/03/17/google-astro-teller-sxsw/">Astro Teller: Here's what we did wrong with Google Glass</a>
+    </p>
+  </div>
+
+  <div id="credit" class="step" data-x="4000" data-y="500" data-z="-3000" data-rotate-y="90" data-rotate-z="90">
+    <p class="title">Credit</p>
+    <p class="desc">
+      &bull; <a href="http://github.com/bartaz/impress.js">Impress.js</a><br />
+      &bull; Various image source (references embedded in html)
+    </p>
+  </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1000" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.min.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
